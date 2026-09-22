@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Echo & Truth — "Burnt Archive" Stilguide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0d0b08;
+    color: #d4b483;
+    font-family: 'Georgia', serif;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 16px 80px;
+  }
+  h1 { font-size: 1.6rem; color: #f0e4c4; margin-bottom: 4px; letter-spacing: .04em; }
+  .subtitle { font-size: .9rem; color: #8a7050; margin-bottom: 36px; border-bottom: 1px solid #2a2010; padding-bottom: 14px; }
+
+  .section { margin-bottom: 48px; }
+  .section h2 { font-size: 1.1rem; color: #c8a96e; border-left: 3px solid #8b3a0f; padding-left: 10px; margin-bottom: 16px; }
+
+  /* Concept box */
+  .concept {
+    background: #1a1408;
+    border: 1px solid #3a2810;
+    border-left: 4px solid #8b3a0f;
+    padding: 18px 22px;
+    margin-bottom: 32px;
+    line-height: 1.8;
+    font-size: .95rem;
+  }
+  .concept strong { color: #f0e4c4; }
+
+  /* Palette */
+  .palette { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .swatch {
+    width: 100px; border-radius: 4px; overflow: hidden;
+    border: 1px solid #333;
+  }
+  .swatch-color { height: 60px; }
+  .swatch-label { background: #111; padding: 6px 8px; font-size: .72rem; line-height: 1.4; color: #aaa; }
+  .swatch-label strong { display: block; color: #d4b483; font-size: .78rem; }
+
+  /* Rules */
+  .rules { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .rule {
+    background: #14100a;
+    border: 1px solid #2a2010;
+    padding: 12px 14px;
+    font-size: .85rem;
+    line-height: 1.6;
+  }
+  .rule-icon { font-size: 1.2rem; margin-right: 6px; }
+  .rule strong { color: #c8a96e; display: block; margin-bottom: 4px; }
+
+  /* Images */
+  .image-grid { display: flex; flex-direction: column; gap: 36px; }
+  .image-card { background: #111008; border: 1px solid #2a2010; border-radius: 6px; overflow: hidden; }
+  .image-card img { width: 100%; display: block; }
+  .image-meta { padding: 16px 20px; }
+  .image-meta h3 { color: #f0e4c4; font-size: 1rem; margin-bottom: 6px; }
+  .image-meta .num { color: #8b3a0f; font-weight: bold; margin-right: 6px; }
+  .prompt-box {
+    background: #0d0b06;
+    border-left: 3px solid #4a6080;
+    padding: 10px 14px;
+    font-size: .78rem;
+    color: #888;
+    font-family: monospace;
+    line-height: 1.6;
+    margin-top: 10px;
+    white-space: pre-wrap;
+  }
+  .tag { display: inline-block; background: #1e1408; border: 1px solid #3a2810; color: #c8a96e; font-size: .72rem; padding: 2px 8px; border-radius: 3px; margin: 4px 4px 0 0; }
+
+  /* Comparison */
+  .comp-table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+  .comp-table th { background: #1a1408; color: #c8a96e; padding: 8px 12px; text-align: left; border-bottom: 2px solid #3a2810; }
+  .comp-table td { padding: 8px 12px; border-bottom: 1px solid #1e1810; color: #aaa; vertical-align: top; }
+  .comp-table tr:last-child td { color: #f0e4c4; background: #1a120a; font-weight: bold; }
+  .comp-table .highlight { color: #8b3a0f; }
+
+  .footer { text-align: center; color: #444; font-size: .75rem; margin-top: 60px; }
+</style>
+</head>
+<body>
+
+<h1>🔥 Echo &amp; Truth — Visual Style Guide</h1>
+<div class="subtitle">"Burnt Archive" — Dramatisk gravyr-estetik | v2 September 2026</div>
+
+<!-- CONCEPT -->
+<div class="concept">
+  <strong>Konceptet: "Burnt Archive"</strong><br><br>
+  Historien berättar sig själv genom sitt eget bildspråk. Tre lager:<br>
+  <strong>1. Kompositionell tyngd</strong> — dramatiska vinklar, djupa skuggor, off-center motiv<br>
+  <strong>2. Arkivkänsla</strong> — pappers-textur, bläck-look, åldrat material, gravyr-crosshatching<br>
+  <strong>3. Kontrollerad färg</strong> — nästan monokrom sepia med ett enda accentfärg per bild<br><br>
+  Resultatet ska se ut som om Gustave Doré och Carl Emil Doepler hade fått ett digitalt verktyg — men behållit hantverket.
+</div>
+
+<!-- PALETTE -->
+<div class="section">
+  <h2>Färgpalett</h2>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background:#1a1008"></div><div class="swatch-label"><strong>Djup sepia</strong>#1a1008 — 70% bakgrund</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#3d2410"></div><div class="swatch-label"><strong>Bränd umbra</strong>#3d2410 — skuggor, mellanplan</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#d4b483"></div><div class="swatch-label"><strong>Pergament</strong>#d4b483 — ljus, fokuspunkt</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#1c2030"></div><div class="swatch-label"><strong>Kall skugga</strong>#1c2030 — natt, dramatik</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#8b3a0f"></div><div class="swatch-label"><strong>Bränd sienna</strong>#8b3a0f — eld, viktiga detaljer</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#4a6080"></div><div class="swatch-label"><strong>Iskall stål</strong>#4a6080 — hjälmar, vapen, vinter</div></div>
+  </div>
+  <p style="font-size:.8rem;color:#666;margin-top:8px;">Regel: Max 2 accentfärger per bild. Resten är sepia/umbra.</p>
+</div>
+
+<!-- RULES -->
+<div class="section">
+  <h2>Kompositionsregler</h2>
+  <div class="rules">
+    <div class="rule"><span class="rule-icon">☀️</span><strong>En ljuskälla alltid</strong>Fackla, fönster eller sidobelysning. Rembrandt-ljus: 70% ljus, 30% djup skugga. Aldrig overhead.</div>
+    <div class="rule"><span class="rule-icon">📐</span><strong>Rule of thirds strikt</strong>Aldrig centrerat huvud eller objekt. Motivet placeras i en av de fyra skärningspunkterna.</div>
+    <div class="rule"><span class="rule-icon">🔍</span><strong>Närbild prioriteras</strong>Ansikten, detaljer, material. Inga "postkortsvy"-helikopterperspektiv. Texturen ska synas.</div>
+    <div class="rule"><span class="rule-icon">🌑</span><strong>Kantvinjettering</strong>Mörka hörn drar blicken mot centrum. Bakgrund alltid mörkare än förgrunden.</div>
+    <div class="rule"><span class="rule-icon">✏️</span><strong>Gravyr-crosshatching</strong>Skuggorna ska ha karaktär av etsning/träsnitt — inte fotorealistisk oskärpa.</div>
+    <div class="rule"><span class="rule-icon">🚫</span><strong>Aldrig text i bild</strong>Inga skyltar, inga watermarks, inga labels. Bilderna talar utan ord.</div>
+  </div>
+</div>
+
+<!-- THREE TEST IMAGES -->
+<div class="section">
+  <h2>Tre provbilder — stil-test</h2>
+  <div class="image-grid">
+
+    <div class="image-card">
+      <img src="style-test/test01_hook_viking.jpg" alt="Norse warrior">
+      <div class="image-meta">
+        <h3><span class="num">#1</span>Hook-bilden — Den verkliga vikingen</h3>
+        <span class="tag">Scen 01</span><span class="tag">Intro/Hook</span><span class="tag">Ingen hornhjälm</span>
+        <div class="prompt-box">Motiv: Norse warrior, simple iron round helmet, chainmail, battle-worn.
+Ljus: Single-source side lighting, left, deep shadow 40% of frame.
+Stil: Burnt sepia + cold steel-blue accent on helmet.
+Känsla: Gustave Doré + 19th-century press illustration.</div>
+      </div>
+    </div>
+
+    <div class="image-card">
+      <img src="style-test/test02_gjermundbu.jpg" alt="Gjermundbu helmet">
+      <div class="image-meta">
+        <h3><span class="num">#2</span>Artefakten — Gjermundbu-hjälmen</h3>
+        <span class="tag">Scen 20</span><span class="tag">Museum still life</span><span class="tag">Warm amber accent</span>
+        <div class="prompt-box">Motiv: Single ancient iron helmet on dark velvet, dented, rust-stained, spectacle eyeguard.
+Ljus: Spotlight from above-left, deep shadow behind.
+Stil: Burnt sepia + warm amber-gold on iron surface.
+Känsla: Rembrandt still life meets museum photography.</div>
+      </div>
+    </div>
+
+    <div class="image-card">
+      <img src="style-test/test03_wagner_opera.jpg" alt="Wagner opera 1876">
+      <div class="image-meta">
+        <h3><span class="num">#3</span>Ursprunget — Bayreuth 1876</h3>
+        <span class="tag">Scen 16</span><span class="tag">Opera stage</span><span class="tag">Theatrical gold accent</span>
+        <div class="prompt-box">Motiv: Grand 19th-century opera house, singers in horned costumes, gas lamp light.
+Ljus: Stage footlights from below, deep darkness in theatre wings.
+Stil: Burnt sepia + warm gold accent, audience silhouettes in foreground.
+Känsla: Gustave Doré engraving + illustrated press, 1870s.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- COMPETITIVE POSITIONING -->
+<div class="section">
+  <h2>Hur Echo &amp; Truth särskiljer sig</h2>
+  <table class="comp-table">
+    <tr><th>Kanal</th><th>Stil</th><th>Vad de saknar</th><th>Publik</th></tr>
+    <tr><td>OverSimplified</td><td>Stick figures, humor, vita bakgrunder</td><td>Inget visuellt allvar — känns barnigt för 30+</td><td>13–25 år</td></tr>
+    <tr><td>Simple History</td><td>Flat vector, begränsad palett</td><td>Generisk, tusentals kanaler ser likadana ut</td><td>Bred, skolelever</td></tr>
+    <tr><td>Historically</td><td>Mörka illustrationer, dramatiska stillbilder</td><td>Mer nutida digital look, saknar arkiv-känsla</td><td>20–40 år</td></tr>
+    <tr><td class="highlight">Echo &amp; Truth</td><td>"Burnt Archive" — gravyr-estetik</td><td class="highlight">Det oanvända mitten: konsthistorisk tyngd + AI-skalbarhet</td><td>25–45 år, kvalitetsintresserade</td></tr>
+  </table>
+</div>
+
+<!-- HISTORICAL IMAGES NOTE -->
+<div class="section">
+  <h2>Historiska bilder i "Burnt Archive"</h2>
+  <div class="concept">
+    <strong>Tre bildtyper i systemet:</strong><br><br>
+    <strong>Typ A — Ren AI</strong> (nutida/konceptuella scener): Pop-culture viking, football crowd, berserker.
+    Generera med nano_banana_pro @ 2k, prompt enligt stilformeln.<br><br>
+    <strong>Typ B — Riktig arkivbild behandlad</strong>: Gjermundbu-hjälmen, Viksø-hjälmarna, Bayreuth-scener.
+    Ladda ned CC/public domain original → kör "Burnt Archive"-filter (kontrast +40, sepia overlay, vinjett). Ingen text i bild.<br><br>
+    <strong>Typ C — Hybrid</strong>: Porträtt av Wagner, Roberta Frank, kartor.
+    Ta real PD-bild som image-reference → prompten styr kompositionen → modellen behåller likhet men lyfter stilen.<br><br>
+    Resultatet: <em>bilderna ser konsekventa ut oavsett om de är AI eller arkiv.</em>
+  </div>
+</div>
+
+<div class="footer">Echo &amp; Truth — "Burnt Archive" Style Guide v2 | historian-lead | September 2026</div>
+</body>
+</html>
